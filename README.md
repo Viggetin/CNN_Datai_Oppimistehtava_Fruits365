@@ -1,38 +1,38 @@
 # CNN_Datai_Oppimistehtava_Fruits365
 
-# CNN-based Fruit and Vegetable Image Classification
+## CNN-pohjainen hedelmien ja vihannesten kuvantunnistus
 
-This project implements a Convolutional Neural Network (CNN) for classifying fruits and vegetables from images. The work was completed as part of the Data-AI course (Learning Assignment 2).
+Tässä projektissa toteutetaan konvoluutioneuroverkkoon (CNN) perustuva malli, jonka avulla tunnistetaan hedelmiä ja vihanneksia kuvista. Projekti on tehty osana Data-AI-kurssin oppimistehtävää 2.
 
-## Project Overview
+## Projektin yleiskuvaus
 
-The goal of this project was to explore CNN performance in image recognition tasks. The work started with a simple two-class classification problem (banana vs. cucumber) and was later extended to multiple fruit and vegetable classes.
+Projektin tavoitteena oli tutkia CNN-mallien toimivuutta kuvantunnistustehtävissä. Työ aloitettiin yksinkertaisella kahden luokan luokittelulla (banaani vs. kurkku), minkä jälkeen mallia laajennettiin useampiin hedelmä- ja vihannesluokkiin.
 
-## Technologies
+## Käytetyt teknologiat
 
 - Python  
 - TensorFlow / Keras  
-- Convolutional Neural Networks  
+- Konvoluutioneuroverkot (CNN)  
 - ImageDataGenerator  
 - Matplotlib  
 - Scikit-learn  
 
-## Dataset
+## Datasetti
 
-The project uses the Fruits-360 dataset from Kaggle:
-- Approximately 120,000 images  
-- 176 classes  
-- Image resolution: 100×100 pixels  
-- White background and controlled lighting  
+Projektissa käytetään Kagglesta saatavaa Fruits-360-datasettiä:
+- Noin 120 000 kuvaa  
+- 176 eri luokkaa  
+- Kuvien resoluutio 100×100 pikseliä  
+- Valkoinen tausta ja hallittu valaistus  
 
-## Results
+## Tulokset
 
-- Banana vs. cucumber classification achieved near-perfect accuracy.
-- Multi-class classification performance was significantly lower due to dataset imbalance.
-- Best results were achieved with images having a white, shadow-free background.
+- Banaanin ja kurkun luokittelu saavutti lähes täydellisen tarkkuuden.
+- Usean luokan luokittelussa suorituskyky heikkeni datan epätasapainon vuoksi.
+- Parhaat tulokset saavutettiin kuvilla, joissa tausta oli valkoinen ja varjoton.
 
-## Limitations and Improvements
+## Rajoitteet ja jatkokehitys
 
-- Strong class imbalance affected model predictions.
-- Real-world images reduced accuracy.
-
+- Luokkien voimakas epätasapaino vaikutti mallin ennusteisiin.
+- Todelliset käyttökuvat heikensivät tunnistustarkkuutta.
+- Mahdollisia jatkokehityskohteita ovat datan augmentointi, datan tasapainotus ja siirto-oppiminen.
